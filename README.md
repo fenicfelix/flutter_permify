@@ -1,3 +1,5 @@
+# Flutter Permify
+
 "Flutter Permify is a powerful and intuitive package designed to streamline role-based access control (RBAC) and permission management in Flutter applications. Built on top of Laravel's renowned Spatie Permissions plugin, Permify offers a seamless integration with familiar concepts and practices, making it easy for Flutter developers to implement granular access control within their applications.
 
 With Flutter Permify, you can define custom roles and assign fine-grained permissions to each role, enabling precise control over user access to different parts of your application. Whether you're building a simple mobile app or a complex enterprise solution, Permify provides the flexibility and scalability to adapt to your unique security requirements.
