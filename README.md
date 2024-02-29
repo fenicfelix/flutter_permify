@@ -6,11 +6,11 @@ With Flutter Permify, you can define custom roles and assign fine-grained permis
 
 ## Features
 
-- Role Management: Define and manage roles with ease, assigning descriptive names and defining their permissions.
-- Permission Management: Create and manage permissions at a granular level, specifying access rights for each feature or functionality.
-- Role-Based Access Control (RBAC): Implement RBAC principles to control access to resources based on user roles, ensuring compliance with security policies.
-- Flexible Integration: Seamlessly integrate Permify into your existing Flutter projects, leveraging its intuitive API and extensive documentation.
-- Cross-Platform Support: Build secure Flutter applications for multiple platforms, including Android, iOS, web, and desktop, with Permify's cross-platform compatibility.
+- **Role Management:** Define and manage roles with ease, assigning descriptive names and defining their permissions.
+- **Permission Management:** Create and manage permissions at a granular level, specifying access rights for each feature or functionality.
+- **Role-Based Access Control (RBAC):** Implement RBAC principles to control access to resources based on user roles, ensuring compliance with security policies.
+- **Flexible Integration:** Seamlessly integrate Permify into your existing Flutter projects, leveraging its intuitive API and extensive documentation.
+- **Cross-Platform Support:** Build secure Flutter applications for multiple platforms, including Android, iOS, web, and desktop, with Permify's cross-platform compatibility.
 
 ## Getting started
 
