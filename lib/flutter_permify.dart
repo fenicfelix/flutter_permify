@@ -1,18 +1,21 @@
 library flutter_permify;
 
+/// Import the required packages
 import 'package:shared_preferences/shared_preferences.dart';
 
 class Permify {
+  /// Permissions and roles are stored in SharedPreferences
   static const String permissionsKey = 'flutter_permify_permissions';
   static const String rolesKey = 'flutter_permify_roles';
 
+  /// Set the permissions for the current user
   static Future<void> setPermissions(List<String>? permissions) async {
+    /// Check if the permissions list is null or empty
     if (permissions == null || permissions.isEmpty) {
       throw ArgumentError('Permissions list cannot be null or empty');
     }
 
-    // Additional validation logic as needed
-
+    /// Save the permissions to SharedPreferences once the list is validated
     try {
       final SharedPreferences prefs = await SharedPreferences.getInstance();
       await prefs.setStringList(permissionsKey, permissions);
@@ -23,7 +26,9 @@ class Permify {
     }
   }
 
+  /// Get the permissions for the current user
   static Future<List<String>> getPermissions() async {
+    /// Get the permissions from SharedPreferences
     try {
       final SharedPreferences prefs = await SharedPreferences.getInstance();
       return prefs.getStringList(permissionsKey) ?? [];
@@ -34,7 +39,9 @@ class Permify {
     }
   }
 
+  /// Check if the current user has a specific permission
   static Future<bool> hasPermission(String permission) async {
+    /// Check if the permission is in the list of saved permissions
     try {
       final List<String> savedPermissions = await getPermissions();
       return savedPermissions.contains(permission);
@@ -45,11 +52,14 @@ class Permify {
     }
   }
 
+  /// Set the roles for the current user
   static Future<void> setRoles(List<String>? roles) async {
+    /// Check if the roles list is null or empty
     if (roles == null || roles.isEmpty) {
       throw ArgumentError('Roles list cannot be null or empty');
     }
 
+    /// Save the roles to SharedPreferences once the list is validated
     try {
       final SharedPreferences prefs = await SharedPreferences.getInstance();
       await prefs.setStringList(rolesKey, roles);
@@ -60,7 +70,9 @@ class Permify {
     }
   }
 
+  /// Get the roles for the current user
   static Future<List<String>> getRoles() async {
+    /// Get the roles from SharedPreferences
     try {
       final SharedPreferences prefs = await SharedPreferences.getInstance();
       return prefs.getStringList(rolesKey) ?? [];
@@ -71,7 +83,9 @@ class Permify {
     }
   }
 
+  /// Check if the current user has a specific role
   static Future<bool> hasRole(String role) async {
+    /// Check if the role is in the list of saved roles
     try {
       final List<String> savedRoles = await getRoles();
       return savedRoles.contains(role);
@@ -82,7 +96,9 @@ class Permify {
     }
   }
 
+  /// Clear all permissions and roles
   static Future<void> clearAll() async {
+    /// Clear all permissions and roles from SharedPreferences
     try {
       final SharedPreferences prefs = await SharedPreferences.getInstance();
       await prefs.clear();
@@ -93,7 +109,9 @@ class Permify {
     }
   }
 
+  /// Clear all permissions
   static Future<void> clearPermissions() async {
+    /// Clear all permissions from SharedPreferences
     try {
       final SharedPreferences prefs = await SharedPreferences.getInstance();
       await prefs.remove(permissionsKey);
@@ -104,7 +122,9 @@ class Permify {
     }
   }
 
+  /// Clear all roles
   static Future<void> clearUserRoles() async {
+    /// Clear all roles from SharedPreferences
     try {
       final SharedPreferences prefs = await SharedPreferences.getInstance();
       await prefs.remove(rolesKey);
