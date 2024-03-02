@@ -56,6 +56,23 @@ void main() async {
     
 ```
 
+## Example
+
+
+
+The above example uses the `Permify` class to set permissions and roles, and then checks if a user has a specific permission or role. You can use the `Permify` class to perform various operations, such as creating permissions, assigning permissions to roles, and checking user access rights.
+
+## Dependencies
+
+Flutter Permify is built on top of the following packages:
+
+- [Shared preferences plugin](https://pub.dev/packages/shared_preferences)
+- [Smart Edge Alert](https://pub.dev/packages/smart_edge_alert)
+
+## Inspiration
+
+[Spatie Permissions](https://spatie.be/docs/laravel-permission/v5/introduction)
+
 ## Additional Information
 For more information about Flutter Permify, how to contribute to the package, file issues, or get support, please visit the GitHub repository.
 
