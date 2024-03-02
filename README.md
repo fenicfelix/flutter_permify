@@ -65,7 +65,3 @@ Contributions, bug reports, and feature requests are welcome! Feel free to submi
 
 ## License
 This package is licensed under the MIT License. See the LICENSE file for details.
-
-```vbnet
-This README file includes additional sections such as "Getting Started," "Usage," and "Additional Information," providing users with more guidance on how to use the package, where to find more information, how to contribute, and information about the license.
-```
