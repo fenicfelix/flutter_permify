@@ -58,7 +58,7 @@ void main() async {
 
 ## Example
 
-
+![Flutter Permify](https://github.com/fenicfelix/flutter_permify/blob/main/screenshots/GIF.gif)
 
 The above example uses the `Permify` class to set permissions and roles, and then checks if a user has a specific permission or role. You can use the `Permify` class to perform various operations, such as creating permissions, assigning permissions to roles, and checking user access rights.
 
