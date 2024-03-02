@@ -71,7 +71,7 @@ Flutter Permify is built on top of the following packages:
 
 ## Inspiration
 
-[Laravel Spatie Permissions](https://spatie.be/docs/laravel-permission/v5/introduction) - The inspiration for Flutter Permify comes from Laravel's Spatie Permissions package, which is widely used in the PHP community for role-based access control. Flutter Permify aims to bring the same level of flexibility and convenience to the Flutter ecosystem, making it easier for developers to manage permissions and roles in their applications.
+The inspiration for Flutter Permify comes from [Laravel's Spatie Permissions](https://spatie.be/docs/laravel-permission/v5/introduction) package, which is widely used in the PHP community for role-based access control. Flutter Permify aims to bring the same level of flexibility and convenience to the Flutter ecosystem, making it easier for developers to manage permissions and roles in their applications.
 
 ## Additional Information
 For more information about Flutter Permify, how to contribute to the package, file issues, or get support, please visit the GitHub repository.
