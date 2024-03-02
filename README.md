@@ -67,11 +67,11 @@ The above example uses the `Permify` class to set permissions and roles, and the
 Flutter Permify is built on top of the following packages:
 
 - [Shared preferences plugin](https://pub.dev/packages/shared_preferences)
-- [Laravel Smart Edge Alert](https://pub.dev/packages/smart_edge_alert)
+- [Smart Edge Alert](https://pub.dev/packages/smart_edge_alert)
 
 ## Inspiration
 
-[Spatie Permissions](https://spatie.be/docs/laravel-permission/v5/introduction)
+[Laravel Spatie Permissions](https://spatie.be/docs/laravel-permission/v5/introduction)
 
 ## Additional Information
 For more information about Flutter Permify, how to contribute to the package, file issues, or get support, please visit the GitHub repository.
