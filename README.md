@@ -66,8 +66,8 @@ The above example uses the `Permify` class to set permissions and roles, and the
 
 Flutter Permify is built on top of the following packages:
 
-- [Shared preferences plugin](https://pub.dev/packages/shared_preferences)
-- [Smart Edge Alert](https://pub.dev/packages/smart_edge_alert)
+- [Shared preferences plugin](https://pub.dev/packages/shared_preferences) - For storing permissions and roles
+- [Smart Edge Alert](https://pub.dev/packages/smart_edge_alert) - For displaying alerts
 
 ## Inspiration
 
