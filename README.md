@@ -56,12 +56,12 @@ void main() async {
     
 ```
 
-For more detailed examples and documentation, refer to the package documentation and the /example folder.
-
 ## Additional Information
 For more information about Flutter Permify, how to contribute to the package, file issues, or get support, please visit the GitHub repository.
 
 Contributions, bug reports, and feature requests are welcome! Feel free to submit a pull request or open an issue on GitHub.
+
+For more detailed examples and documentation, refer to the package documentation and the /example folder.
 
 ## License
 This package is licensed under the MIT License. See the LICENSE file for details.
