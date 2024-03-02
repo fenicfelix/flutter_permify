@@ -1,4 +1,4 @@
-library flutter_permify;
+library permify;
 
 /// Import the required packages
 import 'package:shared_preferences/shared_preferences.dart';

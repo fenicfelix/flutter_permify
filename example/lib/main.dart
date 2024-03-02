@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_permify/flutter_permify.dart';
+import 'package:permify/permify.dart';
 import 'package:smart_edge_alert/smart_edge_alert.dart';
 
 void main() {
@@ -13,12 +13,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Permify',
+      title: 'Permify',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'Flutter Permify Example'),
+      home: const MyHomePage(title: 'Permify Example'),
     );
   }
 }
@@ -108,17 +108,19 @@ class _MyHomePageState extends State<MyHomePage> {
                 },
                 child: const Text('Create'),
               ),
+
               /// read button
               ElevatedButton(
                 onPressed: read,
                 child: const Text('Read'),
               ),
+
               /// update button
               ElevatedButton(
                 onPressed: update,
                 child: const Text('Update'),
               ),
-              
+
               /// delete button
               ElevatedButton(
                 onPressed: delete,

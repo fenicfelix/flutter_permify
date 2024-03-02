@@ -1,5 +1,5 @@
-import 'package:flutter_permify/flutter_permify.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:permify/permify.dart';
 
 void main() {
   test('flutter_permify_test', () {

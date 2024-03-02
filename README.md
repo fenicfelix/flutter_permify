@@ -1,8 +1,8 @@
-# Flutter Permify
+# Permify
 
-Flutter Permify is a powerful and intuitive package designed to streamline role-based access control (RBAC) and permission management in Flutter applications. Built on top of Laravel's renowned Spatie Permissions plugin, Permify offers a seamless integration with familiar concepts and practices, making it easy for Flutter developers to implement granular access control within their applications.
+Permify is a powerful and intuitive package designed to streamline role-based access control (RBAC) and permission management in Flutter applications. Built on top of Laravel's renowned Spatie Permissions plugin, Permify offers a seamless integration with familiar concepts and practices, making it easy for Flutter developers to implement granular access control within their applications.
 
-With Flutter Permify, you can define custom roles and assign fine-grained permissions to each role, enabling precise control over user access to different parts of your application. Whether you're building a simple mobile app or a complex enterprise solution, Permify provides the flexibility and scalability to adapt to your unique security requirements.
+With Permify, you can define custom roles and assign fine-grained permissions to each role, enabling precise control over user access to different parts of your application. Whether you're building a simple mobile app or a complex enterprise solution, Permify provides the flexibility and scalability to adapt to your unique security requirements.
 
 ## Features
 
@@ -14,7 +14,7 @@ With Flutter Permify, you can define custom roles and assign fine-grained permis
 
 ## Getting Started
 
-To get started with Flutter Permify, make sure you have the following prerequisites:
+To get started with Permify, make sure you have the following prerequisites:
 
 - Flutter SDK installed on your machine
 - Basic knowledge of Dart programming language
@@ -24,7 +24,7 @@ Once you have the prerequisites, you can install the package by adding it to you
 
 ```yaml
 dependencies:
-  flutter_permify: ^1.0.0
+  permify: ^1.0.0
 ```
 
 After adding the package to your project, run the following command to install it:
@@ -35,12 +35,12 @@ flutter pub get
 
 ## Usage
 
-Here's a simple example demonstrating how to use Flutter Permify to manage permissions and roles:
+Here's a simple example demonstrating how to use Permify to manage permissions and roles:
 
 ```dart
 
 import 'package:flutter/material.dart';
-import 'package:flutter_permify/flutter_permify.dart';
+import 'package:permify/permify.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -58,23 +58,23 @@ void main() async {
 
 ## Example
 
-![Flutter Permify](https://github.com/fenicfelix/flutter_permify/blob/main/screenshots/GIF.gif)
+![Permify](https://github.com/fenicfelix/flutter_permify/blob/main/screenshots/GIF.gif)
 
 The above example uses the `Permify` class to set permissions and roles, and then checks if a user has a specific permission or role. You can use the `Permify` class to perform various operations, such as creating permissions, assigning permissions to roles, and checking user access rights.
 
 ## Dependencies
 
-Flutter Permify is built on top of the following packages:
+Permify is built on top of the following packages:
 
 - [Shared preferences plugin](https://pub.dev/packages/shared_preferences) - For storing permissions and roles
 - [Smart Edge Alert](https://pub.dev/packages/smart_edge_alert) - For displaying alerts
 
 ## Inspiration
 
-The inspiration for Flutter Permify comes from [Laravel's Spatie Permissions](https://spatie.be/docs/laravel-permission/v5/introduction) package, which is widely used in the PHP community for role-based access control. Flutter Permify aims to bring the same level of flexibility and convenience to the Flutter ecosystem, making it easier for developers to manage permissions and roles in their applications.
+The inspiration for Permify comes from [Laravel's Spatie Permissions](https://spatie.be/docs/laravel-permission/v5/introduction) package, which is widely used in the PHP community for role-based access control. Permify aims to bring the same level of flexibility and convenience to the Flutter ecosystem, making it easier for developers to manage permissions and roles in their applications.
 
 ## Additional Information
-For more information about Flutter Permify, how to contribute to the package, file issues, or get support, please visit the GitHub repository.
+For more information about Permify, how to contribute to the package, file issues, or get support, please visit the GitHub repository.
 
 Contributions, bug reports, and feature requests are welcome! Feel free to submit a pull request or open an issue on GitHub.
 
