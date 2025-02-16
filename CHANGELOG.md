@@ -5,3 +5,7 @@
 ## 0.0.2
 
 * Introduces permissionType for easier use for cases where permissions are not granted explicitly
+
+## 0.0.3
+
+* Updates README.md with more detailed information about the package

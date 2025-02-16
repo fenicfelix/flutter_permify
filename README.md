@@ -24,7 +24,7 @@ Once you have the prerequisites, you can install the package by adding it to you
 
 ```yaml
 dependencies:
-  permify: ^1.0.0
+  permify: ^0.0.3
 ```
 
 After adding the package to your project, run the following command to install it:
@@ -45,12 +45,15 @@ import 'package:permify/permify.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Permify.setPermissions(['read', 'write', 'delete']);
+  await Permify.setPermissionType('all');
   await Permify.setRoles(['admin', 'user']);
   
   bool hasPermission = await Permify.hasPermission('read');
+  bool hasPermissionType = await Permify.hasPermissionType('all');
   bool hasRole = await Permify.hasRole('admin');
   
   print('Has permission to read: $hasPermission');
+    
   print('Has role admin: $hasRole');
 }
     
