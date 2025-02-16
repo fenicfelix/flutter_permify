@@ -26,5 +26,7 @@ void main() {
     expect(() => Permify.getPermissionType(), returnsNormally);
     // Test the hasPermissionType method
     expect(() => Permify.hasPermissionType('admin'), returnsNormally);
+    // Test the hasPermissionOrType method
+    expect(() => Permify.hasPermissionOrType('read', 'admin'), returnsNormally);
   });
 }

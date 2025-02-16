@@ -37,6 +37,7 @@ class _MyHomePageState extends State<MyHomePage> {
     setState(() {
       // ignore: avoid_print
       Permify.setPermissions(['read', 'create']);
+      Permify.setPermissionType('admin');
     });
   }
 
@@ -88,6 +89,16 @@ class _MyHomePageState extends State<MyHomePage> {
     }
   }
 
+  /// function to check if user has a specific permission or permission type
+  void checkPermissionOrType() async {
+    if (await Permify.hasPermissionOrType('read', 'admin')) {
+      showAlert("GRANTED", "User has read permission or admin permission type");
+    } else {
+      showAlert(
+          "DENIED", "User has no read permission or admin permission type");
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     definePermissions();
@@ -125,6 +136,12 @@ class _MyHomePageState extends State<MyHomePage> {
               ElevatedButton(
                 onPressed: delete,
                 child: const Text('Delete'),
+              ),
+
+              /// has permission or permission type button
+              ElevatedButton(
+                onPressed: checkPermissionOrType,
+                child: const Text('Check Permission or Type'),
               ),
             ],
           ),

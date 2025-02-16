@@ -101,6 +101,21 @@ class Permify {
     }
   }
 
+  /// Check if current user has a specific permission or has a specific permission type
+  /// This method is useful for checking if the user has a specific permission or permission type
+  static Future<bool> hasPermissionOrType(
+      String permission, String permissionType) async {
+    /// Check if the user has the specific permission or permission type
+    try {
+      return await hasPermission(permission) ||
+          await hasPermissionType(permissionType);
+    } catch (e) {
+      // Handle exceptions
+      print('Error checking permission or type: $e');
+      throw Exception('Failed to check permission or type');
+    }
+  }
+
   /// Set the roles for the current user
   static Future<void> setRoles(List<String>? roles) async {
     /// Check if the roles list is null or empty

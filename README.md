@@ -24,7 +24,7 @@ Once you have the prerequisites, you can install the package by adding it to you
 
 ```yaml
 dependencies:
-  permify: ^0.0.3
+  permify: ^0.0.4
 ```
 
 After adding the package to your project, run the following command to install it:
@@ -52,9 +52,12 @@ void main() async {
   bool hasPermissionType = await Permify.hasPermissionType('all');
   bool hasRole = await Permify.hasRole('admin');
   
+  bool hasPermissionOrType = await Permify.hasPermissionOrType('read', 'admin');
+  
   print('Has permission to read: $hasPermission');
-    
+  print('Has permission type all: $hasPermissionType');
   print('Has role admin: $hasRole');
+  print('Has permission or permissionType: $hasPermissionOrType');
 }
     
 ```
