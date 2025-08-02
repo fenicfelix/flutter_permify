@@ -1,6 +1,6 @@
 name: permify
 description: A comprehensive Flutter package that simplifies role-based access control (RBAC) and permission management within your Flutter applications.
-version: 0.0.4
+version: 0.0.5
 homepage: https://github.com/fenicfelix/permify
 
 environment:
@@ -19,3 +19,10 @@ dev_dependencies:
   flutter_lints: ^5.0.0
 
 flutter:
+
+topics:
+  - flutter
+  - rbac
+  - role-based-access-control
+  - laravel-spatie
+  - permissions

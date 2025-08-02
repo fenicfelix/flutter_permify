@@ -13,3 +13,7 @@
 ## 0.0.4
 
 * Adds hasPermissionOrType method to check if a user has a specific permission or permission type
+
+## 0.0.5
+
+* Updates README withh laravel-like example for better understanding
